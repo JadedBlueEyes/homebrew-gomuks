@@ -1,9 +1,9 @@
 class Gomuks < Formula
   desc "Matrix client written in Go"
   homepage "https://maunium.net/go/gomuks"
-  url "https://github.com/tulir/gomuks/archive/refs/heads/main.tar.gz"
+  url "https://github.com/tulir/gomuks.git",
+      revision: "5c27592b8cacb1bb5208af357b1bc88eeb6b8a88"
   version "0.0.0"
-  sha256 "e42cab2c79135d2a7d40fa2c5a1f2b0a1bb2fedff614d25ee5728953f3fe629a"
   license "AGPL-3.0-or-later"
 
   depends_on "go" => :build
