@@ -18,7 +18,7 @@ class Gomuks < Formula
               "-X 'maunium.net/go/mautrix.GoModVersion=#{mautrix_version}' " \
               "-s -w"
     system "go", "generate", "./web"
-    system "go", "build", *std_go_args(ldflags), "./cmd/gomuks"
+    system "go", "build", *std_go_args(ldflags: ldflags), "./cmd/gomuks"
   end
 
   test do
