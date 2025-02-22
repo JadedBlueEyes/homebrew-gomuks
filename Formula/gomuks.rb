@@ -11,7 +11,7 @@ class Gomuks < Formula
   depends_on "libolm"
 
   def install
-    systemi "./build.sh", *std_go_args(ldflags: "-s -w")
+    system "./build.sh", *std_go_args(ldflags: "-s -w")
   end
 
   test do
