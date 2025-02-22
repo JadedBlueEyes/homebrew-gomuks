@@ -19,7 +19,7 @@ class Gomuks < Formula
               "-X 'go.mau.fi/gomuks/version.BuildTime=#{Time.now.utc.iso8601}' " \
               "-X 'maunium.net/go/mautrix.GoModVersion=#{mautrix_version}' " \
               "-s -w"
-    system "go", "build", *std_go_args(ldflags) "./cmd/gomuks"
+    system "go", "build", *std_go_args(ldflags), "./cmd/gomuks"
   end
 
   test do
