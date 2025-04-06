@@ -1,8 +1,7 @@
 class Gomuks < Formula
   desc "Matrix client written in Go"
   homepage "https://maunium.net/go/gomuks"
-  url "https://github.com/tulir/gomuks.git",
-      revision: "5c27592b8cacb1bb5208af357b1bc88eeb6b8a88"
+  url "https://github.com/tulir/gomuks.git"
   version "0.0.0"
   license "AGPL-3.0-or-later"
 
